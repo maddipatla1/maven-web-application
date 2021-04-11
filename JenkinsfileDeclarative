@@ -22,7 +22,7 @@ options{
    stage('CheckoutCode')
    {
      steps{
-	 git branch: 'development', credentialsId: '8e348aa2-9531-4dbe-863d-1adb64897470', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+	 git branch: 'development', credentialsId: '1db7a0a0-5af9-4b51-8f2b-9fe18d36147c', url: 'https://github.com/maddipatla1/maven-web-application.git'
 	 }
    }
    
@@ -64,19 +64,19 @@ options{
  
  
  success{
- mail bcc: 'devopstrainingblr@gmail.com', body: '''BuildOver!....
+ mail bcc: 'maddipatla.anilkumar@gmail.com', body: '''BuildOver!....
 
  Regards,
- Mithun Technologies,
- 9980923226''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'devopstrainingblr@gmail.com'
+ Anil kumar,
+ 9980923226''', cc: 'amaddipatla93@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'powel9848@gmail.com'
  }
  
  failure{
- mail bcc: 'devopstrainingblr@gmail.com', body: '''BuildOver!....
+ mail bcc: 'maddipatla.anilkumar@gmail.com', body: '''BuildOver!....
 
  Regards,
- Mithun Technologies,
- 9980923226''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'devopstrainingblr@gmail.com'
+ Anil kumar,
+ ''', cc: 'amaddipatla93r@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'powel9848@gmail.com'
  }
  
  }
