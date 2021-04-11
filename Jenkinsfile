@@ -15,7 +15,7 @@ node ('master')
   
   stage("CheckOutCodeGit")
   {
-   git branch: 'master', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+   git branch: 'master', credentialsId: '1db7a0a0-5af9-4b51-8f2b-9fe18d36147c', url: 'https://github.com/maddipatla1/maven-web-application.git'
  }
  
  stage("Build")
@@ -43,11 +43,11 @@ node ('master')
  
  stage('EmailNotification')
  {
- mail bcc: 'devopstrainingblr@gmail.com', body: '''Build is over
+ mail bcc: 'maddipatla.anilkumar@gmail.com', body: '''Build is over
 
  Thanks,
- Mithun Technologies,
- 9980923226.''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'devopstrainingblr@gmail.com'
+ Anil kumar
+ .''', cc: 'amaddipatla93@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'powel9848@gmail.com'
  }
  */
  
